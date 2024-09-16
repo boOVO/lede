@@ -7,7 +7,7 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 #
 
-name: OpenWrt-CI
+name: ziyong
 
 on:
   push:
@@ -16,7 +16,7 @@ on:
   # schedule:
   #   - cron: 0 20 * * *
   release:
-    types: [published]
+    types: started
 
 jobs:
 
@@ -31,7 +31,7 @@ jobs:
     steps:
 
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           ref: master
 
