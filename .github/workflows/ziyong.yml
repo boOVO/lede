@@ -12,12 +12,11 @@ name: ziyong
 on: 
   repository_dispatch:
   workflow_dispatch:
-
+  
 jobs:
-
   build:
     runs-on: ubuntu-latest
-
+    
     steps:
       - name: Checkout
         uses: actions/checkout@master
