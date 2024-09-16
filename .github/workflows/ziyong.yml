@@ -9,14 +9,9 @@
 
 name: ziyong
 
-on:
-  push:
-    branches: 
-      - master
-  # schedule:
-  #   - cron: 0 20 * * *
-  release:
-    types: started
+on: 
+  repository_dispatch:
+  workflow_dispatch:
 
 jobs:
 
