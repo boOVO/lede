@@ -15,7 +15,6 @@ on:
 
 jobs:
   build:
-
     name: Build OpenWrt Firmware
 
     runs-on: ubuntu-latest
