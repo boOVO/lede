@@ -14,7 +14,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  build_openwrt:
     name: Build OpenWrt Firmware
 
     runs-on: ubuntu-latest
