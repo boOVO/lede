@@ -42,13 +42,13 @@ jobs:
 
       #- name: Generate configuration file
         #run: make defconfig
-       - name: Configuration Customization - ziyong
-         env:
-          CONFIG_FILE: 'ziyong.config'
-        run: |
-          [ -e $CONFIG_FILE ] && mv $CONFIG_FILE OpenWrt_buildinfo/.config
-          chmod +x ./ziyong.sh && ./ziyong.sh
-          cd OpenWrt_buildinfo && make defconfig
+    - name: Configuration Customization - ziyong
+      env:
+        CONFIG_FILE: 'ziyong.config'
+      run: |
+        [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
+        chmod +x ./ziyong.sh && ./ziyong.sh
+        cd openwrt && make de
         
       - name: Download packages
         run: make download -j16
